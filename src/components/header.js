@@ -10,6 +10,7 @@ const Title = styled.h1`
 `;
 
 const SocialMediaLinks = styled.div`
+  display: flex;
   a {
     color: black;
     text-decoration: none;
@@ -64,13 +65,25 @@ const Header = ({ siteTitle }) => (
         </Link>
       </Title>
       <SocialMediaLinks>
-        <a href="https://instagram.com/tonyonodi" target="_blank">
+        <a
+          href="https://instagram.com/tonyonodi"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Icon type="instagram" />
         </a>
-        <a href="https://twitter.com/tonyonodi" target="_blank">
+        <a
+          href="https://twitter.com/tonyonodi"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Icon type="twitter" />
         </a>
-        <a href="https://github.com/tonyonodi" target="_blank">
+        <a
+          href="https://github.com/tonyonodi"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Icon type="github" />
         </a>
       </SocialMediaLinks>

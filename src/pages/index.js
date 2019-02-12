@@ -4,10 +4,10 @@ import styled from "styled-components";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Project, {
-  ProjectTitle,
   ProjectDescription,
   ProjectImage,
   Button,
+  ButtonContainer,
 } from "../components/project";
 import meridianScreenshot from "../images/meridian-screenshot.png";
 import bideScreenshot from "../images/bide-screenshot.png";
@@ -34,12 +34,22 @@ const IndexPage = () => (
           across multiple timezones. It's made with <Code>TypeScript</Code> and{" "}
           <Code>React</Code> and uses <Code>Cordova</Code> for the Android app.
         </p>
-        <Button href="https://www.meridianapp.co" target="_blank">
-          View the web app →
-        </Button>
-        <Button href="https://api.meridianapp.co/android-app" target="_blank">
-          View the Android app →
-        </Button>
+        <ButtonContainer>
+          <Button
+            href="https://www.meridianapp.co"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View the web app →
+          </Button>
+          <Button
+            href="https://api.meridianapp.co/android-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View the Android app →
+          </Button>
+        </ButtonContainer>
       </ProjectDescription>
     </Project>
 
@@ -56,12 +66,22 @@ const IndexPage = () => (
           bar and run anywhere. It is made using <Code>React</Code> and uses{" "}
           <Code>CodeMirror</Code> as the editor.
         </p>
-        <Button href="http://bide.onodi.co" target="_blank">
-          View BIDE →
-        </Button>
-        <Button href="https://github.com/tonyonodi/bide" target="_blank">
-          View on Github →
-        </Button>
+        <ButtonContainer>
+          <Button
+            href="http://bide.onodi.co"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View BIDE →
+          </Button>
+          <Button
+            href="https://github.com/tonyonodi/bide"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View on Github →
+          </Button>
+        </ButtonContainer>
       </ProjectDescription>
     </Project>
 
@@ -78,9 +98,15 @@ const IndexPage = () => (
           phrase again. Sayable is made using <Code>Node</Code> and{" "}
           <Code>MongoDB</Code>, it is hosted serverlessly on <Code>Now</Code>.
         </p>
-        <Button href="https://www.sayable.co" target="_blank">
-          View Sayable →
-        </Button>
+        <ButtonContainer>
+          <Button
+            href="https://www.sayable.co"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Sayable →
+          </Button>
+        </ButtonContainer>
       </ProjectDescription>
     </Project>
     {/* <Image />
