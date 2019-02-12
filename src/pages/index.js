@@ -9,6 +9,9 @@ import Project, {
   ProjectImage,
   Button,
 } from "../components/project";
+import meridianScreenshot from "../images/meridian-screenshot.png";
+import bideScreenshot from "../images/bide-screenshot.png";
+import sayableScreenshot from "../images/sayable-screenshot.png";
 
 const Code = styled.code`
   font-family: "Source Code Pro", monospace;
@@ -20,7 +23,7 @@ const IndexPage = () => (
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Project>
       <ProjectImage>
-        <img src="/images/meridian-screenshot.png" />
+        <img src={meridianScreenshot} alt="Meridian screenshot" />
       </ProjectImage>
       <ProjectDescription>
         <h1>Meridian</h1>
@@ -42,7 +45,7 @@ const IndexPage = () => (
 
     <Project>
       <ProjectImage>
-        <img src="/images/bide-screenshot.png" />
+        <img src={bideScreenshot} alt="BIDE screenshot" />
       </ProjectImage>
       <ProjectDescription>
         <h1>Bide</h1>
@@ -64,7 +67,7 @@ const IndexPage = () => (
 
     <Project>
       <ProjectImage>
-        <img src="/images/sayable-screenshot.png" />
+        <img src={sayableScreenshot} alt="Sayable screenshot" />
       </ProjectImage>
       <ProjectDescription>
         <h1>Sayable</h1>
