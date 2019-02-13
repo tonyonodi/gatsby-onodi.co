@@ -62,8 +62,12 @@ const IndexPage = () => (
           Clojure
         </Link>{" "}
         etc.) and whatever the new hotness is in the frontend world. When I'm
-        not programming I enjoy cooking, climbing, and running. Check out some
-        of my more recent projects below...
+        not programming I enjoy{" "}
+        <Link href="http://rocketreads.com/tony" target="_blank">
+          reading
+        </Link>
+        , cooking, climbing, and running. Check out some of my more recent
+        projects below...
       </p>
     </Intro>
     <div>
