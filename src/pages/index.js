@@ -42,7 +42,7 @@ const IndexPage = () => (
         </Link>{" "}
         (or{" "}
         <Link href="https://www.javascript.com/" target="_blank">
-          Typescript
+          TypeScript
         </Link>
         ) with{" "}
         <Link href="https://reactjs.org/" target="_blank">
