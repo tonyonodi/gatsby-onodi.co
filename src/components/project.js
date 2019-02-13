@@ -47,10 +47,15 @@ const Project = styled.div`
     transform: rotate3d(-5, 60, -9, 10deg);
     box-shadow: -13px 9px 27px 10px rgba(0, 0, 0, 0.25);
   }
-  @media only screen and (min-width: ${midBreakpoint + 1}) {
+
+  &:nth-child(even) img {
+    transform: rotate3d(-5, 60, -9, -10deg);
+    box-shadow: 13px 9px 27px 10px rgba(0, 0, 0, 0.25);
+  }
+  @media only screen and (max-width: ${midBreakpoint}) {
     &:nth-child(even) img {
-      transform: rotate3d(-5, 60, -9, -10deg);
-      box-shadow: 13px 9px 27px 10px rgba(0, 0, 0, 0.25);
+      transform: rotate3d(-5, 60, -9, 10deg);
+      box-shadow: -13px 9px 27px 10px rgba(0, 0, 0, 0.25);
     }
   }
   @media only screen and (max-width: ${midBreakpoint}) {
