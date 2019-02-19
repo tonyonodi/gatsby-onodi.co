@@ -114,7 +114,7 @@ const IndexPage = () => (
               rel="noopener noreferrer"
               style={{ background: green }}
             >
-              View web app →
+              View web app
             </Button>
             <Button
               href="https://api.meridianapp.co/android-app"
@@ -122,7 +122,7 @@ const IndexPage = () => (
               rel="noopener noreferrer"
               style={{ background: orange }}
             >
-              View Android app →
+              View Android app
             </Button>
           </ButtonContainer>
         </ProjectDescription>
@@ -170,7 +170,7 @@ const IndexPage = () => (
               rel="noopener noreferrer"
               style={{ background: green }}
             >
-              View BIDE →
+              View BIDE
             </Button>
             <Button
               href="https://github.com/tonyonodi/bide"
@@ -178,7 +178,7 @@ const IndexPage = () => (
               rel="noopener noreferrer"
               style={{ background: orange }}
             >
-              View on Github →
+              View on Github
             </Button>
           </ButtonContainer>
         </ProjectDescription>
@@ -227,7 +227,7 @@ const IndexPage = () => (
               rel="noopener noreferrer"
               style={{ background: green }}
             >
-              View Sayable →
+              View Sayable
             </Button>
           </ButtonContainer>
         </ProjectDescription>

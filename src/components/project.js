@@ -83,7 +83,6 @@ export const Button = styled.a`
   border-radius: 5px;
   padding: 15px 5px;
   font-size: 1rem;
-  font-weight: 300;
   background: ${buttonDarkColor};
   color: whitesmoke;
   -webkit-text-decoration: none;

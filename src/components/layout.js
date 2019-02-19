@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 
 import Header from "./header";
+// import "../images/favicon.ico";
 import "./index.css";
 import "./fonts.css";
 
