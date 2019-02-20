@@ -13,6 +13,7 @@ import Link from "../components/link";
 import meridianScreenshot from "../images/meridian-screenshot.png";
 import bideScreenshot from "../images/bide-screenshot.png";
 import sayableScreenshot from "../images/sayable-screenshot.png";
+import scafellScreenshot from "../images/scafell-screenshot.png";
 
 const green = "#00c386";
 const orange = "#ffa03a";
@@ -71,6 +72,73 @@ const IndexPage = () => (
       </p>
     </Intro>
     <div>
+      <Project>
+        <ProjectImage>
+          <img src={scafellScreenshot} alt="Scafell screenshot" />
+        </ProjectImage>
+        <ProjectDescription>
+          <h1>Scafell</h1>
+          <p>
+            Scafell is like Codepen or JSFiddle for the desktop, it hasn't yet
+            been released but I've linked a demo video below. It allows you to
+            edit HTML, CSS and JavaScript and runs a server on localhost that
+            compiles your code and serves it as a web page. As you type your
+            code and undo history are saved and open browser windows are updated
+            using WebSockets. It is built with{" "}
+            <Link
+              href="https://electronjs.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Electron
+            </Link>
+            ,{" "}
+            <Link
+              href="https://reactjs.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              React
+            </Link>
+            ,{" "}
+            <Link
+              href="https://redux.js.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Redux
+            </Link>
+            ,{" "}
+            <Link
+              href="https://codemirror.net/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CodeMirror
+            </Link>{" "}
+            and{" "}
+            <Link
+              href="https://expressjs.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Express
+            </Link>{" "}
+            .
+          </p>
+          <ButtonContainer>
+            <Button
+              href="https://youtu.be/lh2so1okULw"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ background: green }}
+            >
+              View demo video
+            </Button>
+          </ButtonContainer>
+        </ProjectDescription>
+      </Project>
+
       <Project>
         <ProjectImage>
           <img src={meridianScreenshot} alt="Meridian screenshot" />
@@ -196,11 +264,11 @@ const IndexPage = () => (
             have to go back to Sayable on any device and enter the same three
             word phrase again. Sayable is made using{" "}
             <Link
-              href="https://nodejs.org/"
+              href="https://expressjs.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Node
+              Express
             </Link>{" "}
             and{" "}
             <Link
@@ -209,16 +277,9 @@ const IndexPage = () => (
               rel="noopener noreferrer"
             >
               MongoDB
-            </Link>
-            , it is hosted serverlessly on{" "}
-            <Link
-              href="https://zeit.co/now"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Now
-            </Link>
-            .
+            </Link>{" "}
+            on the back end and vanilla JavaScript on the front end, it uses a
+            custom script to inline almost all assets into one request.
           </p>
           <ButtonContainer>
             <Button
@@ -233,8 +294,6 @@ const IndexPage = () => (
         </ProjectDescription>
       </Project>
     </div>
-    {/* <Image />
-    <Link to="/page-2/">Go to page 2</Link> */}
   </Layout>
 );
 
